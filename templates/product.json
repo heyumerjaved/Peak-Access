@@ -1,0 +1,273 @@
+{
+  "wrapper": "div.product-template-wrapper",
+  "sections": {
+    "gallery": {
+      "type": "flotilla-product-main-gallery",
+      "settings": {
+        "gallery_style": "slider",
+        "enable_zoom": true,
+        "enable_video_looping": true
+      }
+    },
+    "main": {
+      "type": "flotilla-product-main-form",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_included_text": false,
+            "show_shipping_policy": false
+          }
+        },
+        "highlight": {
+          "type": "highlight",
+          "settings": {
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "options_type": "buttons",
+            "preselect_variant": true,
+            "color_swatch_identifier": "color,colour,couleur,colore,farbe,색,色,färg,farve"
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+          }
+        },
+        "stock_warning": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock_range": 5,
+            "show_stock_count": false,
+            "in_stock_message": "Ready to ship",
+            "low_stock_message": "Selling fast",
+            "out_of_stock_message": "Back in soon",
+            "preorder_message": "Coming soon!"
+          }
+        },
+        "payment-buttons": {
+          "type": "payment-buttons",
+          "settings": {
+            "preorder": false,
+            "enable_gift_card_recipient_form": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "enable_accordion": true,
+            "description_heading": "Details"
+          }
+        },
+        "share-buttons": {
+          "type": "social-sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "highlight",
+        "options",
+        "quantity",
+        "stock_warning",
+        "payment-buttons",
+        "description",
+        "share-buttons"
+      ],
+      "settings": {
+      }
+    },
+    "product-specifications": {
+      "type": "flotilla-product-specifications",
+      "settings": {
+        "keys": "",
+        "subheading": "",
+        "heading": "",
+        "heading_alignment": "text-left",
+        "data_alignment": "text-left",
+        "desktop_image_height": "original",
+        "desktop_image_position": "above",
+        "bg_color_scheme": "general",
+        "card_color_scheme": "general"
+      }
+    },
+    "full-width-cross-sells": {
+      "type": "flotilla-full-width-cross-sells",
+      "blocks": {
+        "full-width-cross-sells-00": {
+          "type": "image",
+          "settings": {
+            "product_cards_aspect_ratio": "natural",
+            "product_cards_crop_position": "object-center",
+            "collection_hover_effect": "show_second_image"
+          }
+        },
+        "full-width-cross-sells-01": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "full-width-cross-sells-02": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "full-width-cross-sells-03": {
+          "type": "swatch",
+          "settings": {
+            "touch_size": "36"
+          }
+        }
+      },
+      "block_order": [
+        "full-width-cross-sells-00",
+        "full-width-cross-sells-01",
+        "full-width-cross-sells-02",
+        "full-width-cross-sells-03"
+      ],
+      "settings": {
+        "products_to_show": 3,
+        "subheading": "Promote the whole package",
+        "heading": "Cross-sells",
+        "text": "<p>Use this text to explain details of your products, or highlight cross-sell promotions.<\/p>",
+        "text_alignment": "left",
+        "product_display": "grid",
+        "enable_add_all_button": true,
+        "product_card_alignment": "left",
+        "color_scheme": "general"
+      }
+    },
+    "46d9dc0e-86b8-4e6c-8b1f-d7494e458c22": {
+      "type": "flotilla-product-recommendations",
+      "blocks": {
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-image-1": {
+          "type": "image",
+          "settings": {
+            "product_cards_aspect_ratio": "tall",
+            "product_cards_crop_position": "object-center",
+            "collection_hover_effect": "show_second_image"
+          }
+        },
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-image-1",
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-title-1",
+        "template--20881973444909__46d9dc0e-86b8-4e6c-8b1f-d7494e458c22-price-1"
+      ],
+      "settings": {
+        "color_scheme": "general",
+        "product_recommendations_subheading": "You may also like",
+        "product_recommendations_heading": "",
+        "heading_alignment": "text-left",
+        "product_row_desktop": 4,
+        "product_card_alignment": "left"
+      }
+    },
+    "f4797e2d-5bfa-41be-9915-c0409ef4bd11": {
+      "type": "ship-testimonials",
+      "blocks": {
+        "template--20881973444909__f4797e2d-5bfa-41be-9915-c0409ef4bd11-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial_content": "“Use this section to add reviews or testimonials from your store’s happy customers”",
+            "testimonial_author": "John Smith"
+          }
+        },
+        "template--20881973444909__f4797e2d-5bfa-41be-9915-c0409ef4bd11-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial_content": "“Use this section to add reviews or testimonials from your store’s happy customers”",
+            "testimonial_author": "John Smith"
+          }
+        }
+      },
+      "block_order": [
+        "template--20881973444909__f4797e2d-5bfa-41be-9915-c0409ef4bd11-testimonial-1",
+        "template--20881973444909__f4797e2d-5bfa-41be-9915-c0409ef4bd11-testimonial-2"
+      ],
+      "settings": {
+        "section_subheading": "Build brand trust",
+        "section_heading": "Testimonials",
+        "section_color_scheme": "accent-2"
+      }
+    },
+    "ac3a3f44-de4d-4630-95c0-32b188264d47": {
+      "type": "ship-rich-text",
+      "blocks": {
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Need help?"
+          }
+        },
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Now"
+          }
+        },
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our friendly team aim to get back to you within 48 hours.<\/p>"
+          }
+        },
+        "10adec47-3535-484b-8ca2-7b7409c00e63": {
+          "type": "buttons",
+          "settings": {
+            "button_1_link": "",
+            "button_1_text": "",
+            "button_1_style": "outline",
+            "button_2_link": "shopify:\/\/pages\/contact",
+            "button_2_text": "Contact Now",
+            "button_2_style": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-subheading-1",
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-heading-1",
+        "template--20881973444909__ac3a3f44-de4d-4630-95c0-32b188264d47-text-1",
+        "10adec47-3535-484b-8ca2-7b7409c00e63"
+      ],
+      "settings": {
+        "section_width": "full-with-padding",
+        "horizontal_alignment": "text-center justify-center",
+        "section_color_scheme": "general"
+      }
+    }
+  },
+  "order": [
+    "gallery",
+    "main",
+    "product-specifications",
+    "full-width-cross-sells",
+    "46d9dc0e-86b8-4e6c-8b1f-d7494e458c22",
+    "f4797e2d-5bfa-41be-9915-c0409ef4bd11",
+    "ac3a3f44-de4d-4630-95c0-32b188264d47"
+  ]
+}

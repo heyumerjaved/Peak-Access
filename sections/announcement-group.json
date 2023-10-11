@@ -1,0 +1,39 @@
+{
+  "type": "custom.announcement",
+  "name": "Announcement Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "ship-announcement-bar",
+      "blocks": {
+        "announcement_1": {
+          "type": "announcement",
+          "settings": {
+            "announcement_text": "Calling all work at height specialists",
+            "announcement_link": ""
+          }
+        },
+        "announcement_2": {
+          "type": "announcement",
+          "settings": {
+            "announcement_text": "our goal is to help you maximize the safety and performance of your teams",
+            "announcement_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_1",
+        "announcement_2"
+      ],
+      "settings": {
+        "show_announcement": true,
+        "enable_sticky_announcement": false,
+        "rotation_interval": 5,
+        "show_arrows": false,
+        "section_color_scheme": "accent-2"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar"
+  ]
+}

@@ -1,0 +1,56 @@
+{% comment %}
+    Renders a card with an icon, heading and text.
+    Accepts:
+    - icon_image: {Object} Shopify image object
+    - icon_image_size: {Int} width of the output image
+    - heading: {String} Heading content
+    - text: {String} Text content
+    - text_alignment: {String} Text alignment of the heading and text - 'left', 'right' or 'center' (left by default)
+    - link_url: {String} Url if card is a link
+
+    Usage:
+    {% render 'ship-icon-and-text-card' with icon_image: block.settings.icon_image, heading: block.settings.heading, text: block.settings.text, link_url: block.settings.link %}
+{% endcomment %}
+
+{%- liquid
+  if text_alignment == 'center'
+    assign text_align_class = 'text-center'
+  elsif text_alignment == 'right'
+    assign text_align_class = 'text-right'
+  endif
+
+  assign image_classes = 'inline-block mb-xl md:mb-2xl object-contain'
+-%}
+
+<div class="w-full upto-md:pb-xl text-body bg-page {{ text_align_class }}" data-aid="icon-and-text-card" data-armada-animation="grid-item">
+  {% if link_url %}
+    <a href="{{ link_url }}" class="block" data-aid="icon-and-text-link">
+  {% endif %}
+
+  {% if icon_image %}
+      {% if icon_image_size != blank %}
+        {% assign image_size_classes = ' max-h-[' | append: icon_image_size | append: 'px] max-w-[' | append: icon_image_size | append: 'px]' %}
+      {% endif %}
+      {% assign image_classes = image_classes | append: image_size_classes %}
+      {% render 'armament-thumbnail' with url: icon_image, width: icon_image_size, class: image_classes %}
+    {% else %}
+      {% if icon_image_size == 40 %}
+        {% assign image_classes = image_classes | append: ' h-10 w-10' %}
+      {% else %}
+        {% assign image_classes = image_classes | append: ' h-20 w-20' %}
+      {% endif %}
+      {% render 'armament-placeholder' with name: 'product-1', classes: image_classes %}
+    {% endif %}
+
+    {% if heading %}
+      {% render 'armament-heading' with tag: 'h3', heading_type: 'heading-4', heading_content: heading, data_aid: 'icon-text-card-heading' %}
+    {% endif %}
+
+    {% if text %}
+      <p data-aid="icon-and-text-text">{{ text }}</p>
+    {% endif %}
+
+  {% if link_url %}
+    </a>
+  {% endif %}
+</div>

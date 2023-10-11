@@ -1,0 +1,64 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "8c245ce2-27ed-4291-87bf-2830e7ea5855": {
+      "type": "ship-newsletter",
+      "settings": {
+        "section_subheading": "Signup now",
+        "section_heading": "Get the Peak Access newsletter",
+        "horizontal_alignment": "right",
+        "section_width": "full-with-padding",
+        "section_color_scheme": "accent-2"
+      }
+    },
+    "footer": {
+      "type": "flotilla-footer",
+      "blocks": {
+        "flotilla-footer-0": {
+          "type": "logo",
+          "settings": {
+            "footer_logo": "shopify:\/\/shop_images\/Peak_Access_Logo-whitetext.png",
+            "logo_width_desktop": 140,
+            "logo_width_mobile": 140
+          }
+        },
+        "flotilla-footer-1": {
+          "type": "links",
+          "settings": {
+            "footer_links_heading": "Menu",
+            "footer_navigation": "footer"
+          }
+        },
+        "882fd24d-33b9-4f7b-8fbd-d5f194675ab1": {
+          "type": "links",
+          "settings": {
+            "footer_links_heading": "Support",
+            "footer_navigation": "footer"
+          }
+        },
+        "footer_newsletter": {
+          "type": "footer_newsletter",
+          "settings": {
+            "footer_newsletter_heading": "Newsletter",
+            "footer_newsletter_content": "<p>Sign up for our monthly newsletter<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "flotilla-footer-0",
+        "flotilla-footer-1",
+        "882fd24d-33b9-4f7b-8fbd-d5f194675ab1",
+        "footer_newsletter"
+      ],
+      "settings": {
+        "show_payment_methods": true,
+        "section_color_scheme": "accent-3"
+      }
+    }
+  },
+  "order": [
+    "8c245ce2-27ed-4291-87bf-2830e7ea5855",
+    "footer"
+  ]
+}

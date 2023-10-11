@@ -1,0 +1,74 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "header": {
+      "type": "flotilla-header-basic",
+      "settings": {
+        "header_color_scheme": "general",
+        "logo_image": "shopify:\/\/shop_images\/Peak_Access_Logo.png",
+        "logo_width_desktop": 120,
+        "logo_width_mobile": 150,
+        "logo_position": "left",
+        "enable_sticky_header": false,
+        "show_region_selector": false,
+        "show_language_selector": false,
+        "use_icons": true,
+        "enable_search": true,
+        "show_search_bar": true
+      }
+    },
+    "navigation": {
+      "type": "flotilla-navigation",
+      "blocks": {
+        "standard_menu": {
+          "type": "standard_menu",
+          "settings": {
+            "default_navigation": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "standard_menu"
+      ],
+      "settings": {
+        "alignment": "justify-start",
+        "top_level_font": "headings",
+        "show_desktop_icons": true,
+        "show_top_divider": false,
+        "show_bottom_divider": false,
+        "color_scheme": "accent-3"
+      }
+    },
+    "quick-search": {
+      "type": "engine-quick-search",
+      "blocks": {
+        "engine-quick-search-0": {
+          "type": "search_navigation",
+          "settings": {
+            "navigation_header": "Trending",
+            "search_menu": ""
+          }
+        },
+        "engine-quick-search-1": {
+          "type": "search_collection",
+          "settings": {
+            "featured_collection_header": "Best sellers",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "engine-quick-search-0",
+        "engine-quick-search-1"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "header",
+    "navigation",
+    "quick-search"
+  ]
+}
